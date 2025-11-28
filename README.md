@@ -116,3 +116,41 @@ The command `code [directory]` opens the given directory in VSCode. We used `.`,
     git checkout main
     ```
     *(Note: If your main branch is called `master`, type `git checkout master` instead.)*
+
+---
+
+## Scenario 6: Authorization
+###### you shall not pass
+##### Stop! 🛑 If you tried to `git push` right now, you'd get a nasty error. Why? Because you cloned *my* repository, and I haven't given you permission to mess up my code! You can't push to someone else's repo without an invite.
+
+##### To save your work, you need your own house.
+
+1.  **Go to GitHub:** Open [github.com](https://github.com) in your browser.
+2.  **Create New:** Click the **+** icon in the top right and select **"New repository"**.
+3.  **Setup:**
+    * **Repository name:** `css-git-workshop` (or whatever you want).
+    * **Public/Private:** Public.
+    * **Initialize with README:** Check this box (it makes things easier).
+    * Click **Create repository**.
+
+---
+
+## Scenario 7: git push
+###### let the world see it!
+##### Now that you own a repository, let's open a fresh Codespace linked to *your* account so you can actually push code.
+
+1.  **Open Codespaces:** inside your *newly created* repository, click the green **Code** button.
+2.  **Tab over:** Click the **Codespaces** tab.
+3.  **Launch:** Click **"Create codespace on main"**.
+4.  **Speed Run:** Since this is a new space, quickly re-do the basics to prove you learned them:
+    * Create `YourName.java`.
+    * `git add YourName.java`
+    * `git commit -m "My first push"`
+5.  **The Grand Reveal:** Now, finally, send it to the cloud:
+    ```bash
+    git push
+    ```
+
+    > **Observation:** No errors this time! Go back to your GitHub repository page and refresh. You should see your file there. You officially own that code!
+
+## That's it! You have finished the essentials of Git. Good job, and happy coding! 🎉🎉🎉🎉
